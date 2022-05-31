@@ -1,0 +1,239 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:root {
+  --main-color: red;
+}
+
+.color {
+  color: red;
+}
+
+.contact {
+  padding: 20px;
+  background-color: var(--main-color);
+}
+
+/* Start Global Rules */
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Cairo", sans-serif;
+}
+
+body {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  overflow-x: hidden;
+  overflow-y: visible;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.main-btn {
+  background-color: #00508d;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 40px;
+  font-size: 18px;
+}
+
+.main-btn:hover {
+  color: #709ea4;
+}
+
+.second-btn {
+  background-color: #00535d;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  color: white;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border: none;
+  outline: none;
+}
+.second-btn a {
+  color: white;
+}
+
+.second-btn:hover {
+  color: #709ea4;
+}
+
+.special-title {
+  direction: rtl;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: black;
+  font-size: 50px;
+  gap: 1rem;
+  margin-bottom: 5rem;
+  font-weight: 500;
+}
+.special-title span {
+  color: #00508d !important;
+}
+
+.special-span {
+  width: 120px;
+  height: 2px;
+  background-color: #00508d;
+  background-image: -webkit-linear-gradient(left, #00508d, #6bb4b6);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: -50px auto 60px auto;
+}
+
+input[type=text]::-webkit-input-placeholder {
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+
+input[type=text]::-moz-placeholder {
+  -moz-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+
+input[type=text]:-ms-input-placeholder {
+  -ms-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+
+input[type=text]::-ms-input-placeholder {
+  -ms-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+
+input[type=text]::placeholder {
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+
+input[type=text]:focus::-webkit-input-placeholder {
+  opacity: 0;
+}
+
+input[type=text]:focus::-moz-placeholder {
+  opacity: 0;
+}
+
+input[type=text]:focus:-ms-input-placeholder {
+  opacity: 0;
+}
+
+input[type=text]:focus::-ms-input-placeholder {
+  opacity: 0;
+}
+
+input[type=text]:focus::placeholder {
+  opacity: 0;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #00508d;
+  border-radius: 4.5px;
+  height: 100px;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--main-color-alt);
+}
+
+::-moz-selection {
+  background-color: transparent;
+  color: gold;
+  background-color: black;
+  border-radius: 2px;
+}
+
+::selection {
+  background-color: transparent;
+  color: gold;
+  background-color: black;
+  border-radius: 2px;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* end global varibal*/
+/* Start Header */
+.header {
+  margin-top: 80px;
+}
+.header .container {
+  background-color: #f2f2f2;
+  padding: 40px 0;
+  width: 50%;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (max-width: 767px) {
+  .header .container {
+    padding: 40px;
+    text-align: center;
+    width: 80%;
+  }
+}
+.header .container .message {
+  text-align: end;
+}
+.header .container .message h2 {
+  font-weight: bold;
+}
+.header .container .message p {
+  padding-top: 1rem;
+  font-size: large;
+}
+.header .container .message a {
+  font-size: large;
+}
+
+/* End Header */

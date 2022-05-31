@@ -1,0 +1,157 @@
+// impot global rules file to main file
+@use "../sass/layout/global-rules";
+
+// impot pages file to main file
+@use "../sass/pages/contactus";
+// Import Variables
+@use "../sass/variables/color" as *;
+
+// Import mixins
+@use "../sass/helpers/mixins" as *;
+
+// Import Functions
+@use "../sass/functions/functions" as *;
+// Global Variable
+/* Start Global Rules */
+* {
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+margin: 0;
+font-family: "Cairo", sans-serif;
+}
+body {
+transition: 0.3s;
+overflow-x: hidden;
+overflow-y: visible;
+}
+html {
+scroll-behavior: smooth;
+}
+.main-btn {
+background-color: $color-extra;
+color: white;
+padding: 0.8rem 1.5rem;
+width: fit-content;
+border-radius: 40px;
+font-size: $font-size-small;
+}
+.main-btn:hover {
+color: $p-color;
+}
+.second-btn {
+background-color: $section-color;
+padding: 1rem 2rem;
+border-radius: 10px;
+color: white;
+width: fit-content;
+@include none;
+a {
+color: white;
+}
+}
+.second-btn:hover {
+color: $p-color;
+}
+.special-title {
+direction: rtl;
+display: flex;
+justify-content: center;
+align-items: center;
+color: black;
+font-size: $font-size-large;
+gap: 1rem;
+margin-bottom: 5rem;
+font-weight: 500;
+span {
+color: $color-extra !important;
+}
+}
+.special-span {
+width: 120px;
+height: 2px;
+background-color: $color-extra;
+background-image: -webkit-linear-gradient(left, $color-extra, $color-alt);
+display: flex;
+margin: -50px auto 60px auto;
+}
+
+input[type="text"]::placeholder {
+transition: opacity $transition;
+}
+input[type="text"]:focus::placeholder {
+opacity: 0;
+}
+::-webkit-scrollbar {
+width: 10px;
+transition: $transition;
+}
+::-webkit-scrollbar-track {
+background-color: transparent;
+}
+::-webkit-scrollbar-thumb {
+background-color: $color;
+border-radius: 4.5px;
+height: 100px;
+transition: 1s;
+}
+::-webkit-scrollbar-thumb:hover {
+background-color: var(--main-color-alt);
+}
+::selection {
+background-color: transparent;
+color: gold;
+background-color: black;
+border-radius: 2px;
+}
+body {
+font-family: Arial, Helvetica, sans-serif;
+}
+a {
+text-decoration: none;
+}
+ul {
+list-style: none;
+margin: 0;
+padding: 0;
+}
+.container {
+padding-left: 15px;
+padding-right: 15px;
+margin-left: auto;
+margin-right: auto;
+}
+/* end global varibal*/
+/* Start Header */
+.header {
+margin-top: 80px;
+
+.container {
+background-color: #f2f2f2;
+padding: 40px 0;
+width: 50%;
+margin-right: auto;
+margin-left: auto;
+@include breakpoints(mobile) {
+padding: 40px;
+text-align: center;
+width: 80%;
+
+}
+.message {
+h2 {
+font-weight: bold;
+}
+text-align: end;
+p {
+padding-top: 1rem;
+font-size: large;
+}
+a {
+font-size: large;
+}
+}
+}
+}
+/* End Header */
+
