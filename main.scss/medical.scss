@@ -59,9 +59,10 @@ html {
   justify-content: center;
   align-items: center;
   color: black;
-  font-size: $font-size-large;
-  gap: 1rem;
+  font-size: calculate($font-size , 5px);
+  gap: 2rem;
   margin-bottom: 5rem;
+  padding-bottom: 1rem;
   font-weight: 500;
   span {
     color: $color-extra !important;
@@ -464,12 +465,13 @@ ul {
     .main-box {
       display: flex;
       flex-direction: row-reverse;
+      justify-content: space-between;
       gap: 2rem;
       @include breakpoints(medium) {
         flex-direction: column-reverse;
       }
       .location {
-        width: 100%;
+        
         @include breakpoints(medium) {
           display: flex;
           justify-content: center;
@@ -514,6 +516,9 @@ ul {
         }
       }
       .second-box {
+        @include breakpoints(large) {
+          width: 100%;
+        }
         h3 {
           color: $color-extra;
           @include breakpoints(medium) {
@@ -530,7 +535,6 @@ ul {
           flex-direction: column;
           gap: 0.9rem;
           padding: 1rem;
-          width: 100%;
           @include breakpoints(mobile) {
             width: 100%;
           }
@@ -621,7 +625,7 @@ ul {
 .communication {
   background-image: url(https://osama-abbas.com/wp-content/uploads/2020/10/Red-BG.jpg?id=316);
   background-size: cover;
-  height: 116vh;
+   height: fit-content;
   .container {
     form {
       background-color: $color-extra;

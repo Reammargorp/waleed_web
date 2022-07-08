@@ -43,7 +43,7 @@ html {
   width: -moz-fit-content;
   width: fit-content;
   border-radius: 40px;
-  font-size: 18px;
+  font-size: 14px;
 }
 
 .main-btn:hover {
@@ -81,9 +81,10 @@ html {
       -ms-flex-align: center;
           align-items: center;
   color: black;
-  font-size: 50px;
-  gap: 1rem;
+  font-size: 30px;
+  gap: 2rem;
   margin-bottom: 5rem;
+  padding-bottom: 1rem;
   font-weight: 500;
 }
 .special-title span {
@@ -368,7 +369,7 @@ ul {
   border-radius: 50%;
   background-color: red;
   color: white;
-  font-size: 30px;
+  font-size: 25px;
   min-width: 65px;
   max-width: 65px;
   min-height: 65px;
@@ -422,7 +423,7 @@ ul {
 .landing .container .contact-btn .container .social .whatsapp svg {
   background-color: #49e670;
   padding: 15px;
-  font-size: 35px;
+  font-size: 30px;
   border-radius: 50%;
   color: white;
   display: -webkit-box;
@@ -438,7 +439,7 @@ ul {
 }
 @media (max-width: 767px) {
   .landing .container .contact-btn .container .social .whatsapp svg {
-    font-size: 30px;
+    font-size: 25px;
   }
 }
 @media (max-width: 767px) {
@@ -449,7 +450,7 @@ ul {
 .landing .container .contact-btn .container .social .messenger svg {
   background-color: #1877f2;
   padding: 12px;
-  font-size: 32px;
+  font-size: 27px;
   border-radius: 50%;
   color: white;
   display: -webkit-box;
@@ -465,7 +466,7 @@ ul {
 }
 @media (max-width: 767px) {
   .landing .container .contact-btn .container .social .messenger svg {
-    font-size: 30px;
+    font-size: 25px;
   }
 }
 .landing .container .contact-btn .container .contact-icon {
@@ -482,11 +483,11 @@ ul {
   border-radius: 50%;
   color: white;
   padding: 12px;
-  font-size: 32px;
+  font-size: 27px;
 }
 @media (max-width: 767px) {
   .landing .container .contact-btn .container .contact-icon svg {
-    font-size: 30px;
+    font-size: 25px;
   }
 }
 .landing .container .btn-up {
@@ -564,7 +565,7 @@ ul {
           align-items: center;
   border-radius: 50%;
   color: black;
-  font-size: 30px;
+  font-size: 25px;
   max-width: 50px;
   min-width: 50px;
   max-height: 50px;
@@ -591,7 +592,7 @@ ul {
   left: 50%;
   -webkit-transform: translate(1000%, -50%);
           transform: translate(1000%, -50%);
-  font-size: 30px;
+  font-size: 25px;
   cursor: pointer;
   color: white;
 }
@@ -602,7 +603,7 @@ ul {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   padding: 20px;
-  font-size: 25px;
+  font-size: 20p;
   -webkit-transition: 2s;
   transition: 2s;
   color: white;
@@ -616,23 +617,23 @@ ul {
   direction: ltr;
 }
 .landing .container .main-search .container .search-bar .text::-webkit-input-placeholder {
-  font-size: 25px;
+  font-size: 20p;
   color: white;
 }
 .landing .container .main-search .container .search-bar .text::-moz-placeholder {
-  font-size: 25px;
+  font-size: 20p;
   color: white;
 }
 .landing .container .main-search .container .search-bar .text:-ms-input-placeholder {
-  font-size: 25px;
+  font-size: 20p;
   color: white;
 }
 .landing .container .main-search .container .search-bar .text::-ms-input-placeholder {
-  font-size: 25px;
+  font-size: 20p;
   color: white;
 }
 .landing .container .main-search .container .search-bar .text::placeholder {
-  font-size: 25px;
+  font-size: 20p;
   color: white;
 }
 .landing .container .main-search .container .search-bar .text.active {
@@ -675,7 +676,7 @@ ul {
 }
 .result .special-title {
   margin-top: -10%;
-  font-size: 30px;
+  font-size: 25px;
   font-weight: bolder;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -692,7 +693,7 @@ ul {
 }
 @media (max-width: 1199px) {
   .result .special-title {
-    font-size: 25px;
+    font-size: 20p;
   }
 }
 @media (max-width: 767px) {
@@ -861,7 +862,7 @@ ul {
       -ms-flex-align: center;
           align-items: center;
   font-weight: normal;
-  font-size: 18px;
+  font-size: 14px;
   margin-top: 4%;
   padding: 5px;
 }
@@ -899,7 +900,9 @@ ul {
 .communication {
   background-image: url(https://osama-abbas.com/wp-content/uploads/2020/10/Red-BG.jpg?id=316);
   background-size: cover;
-  height: 116vh;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 .communication .container form {
   background-color: #00508d;

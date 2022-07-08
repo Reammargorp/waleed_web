@@ -59,9 +59,10 @@ html {
   justify-content: center;
   align-items: center;
   color: black;
-  font-size: $font-size-large;
-  gap: 1rem;
+  font-size: calculate($font-size , 5px);
+  gap: 2rem;
   margin-bottom: 5rem;
+  padding-bottom: 1rem;
   font-weight: 500;
   span {
     color: $color-extra !important;
@@ -487,7 +488,7 @@ ul {
         flex-direction: column-reverse;
       }
       .location {
-        width: 80%;
+        width: 30%;
         @include breakpoints(medium) {
           display: flex;
           justify-content: center;
@@ -663,7 +664,7 @@ ul {
 .communication {
   background-image: url(https://osama-abbas.com/wp-content/uploads/2020/10/Red-BG.jpg?id=316);
   background-size: cover;
-  height: 116vh;
+   height: fit-content;
   .container {
     form {
       background-color: $color-extra;

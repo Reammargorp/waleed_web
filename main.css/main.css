@@ -42,7 +42,7 @@ html {
   width: -moz-fit-content;
   width: fit-content;
   border-radius: 40px;
-  font-size: 18px;
+  font-size: 14px;
 }
 
 .main-btn:hover {
@@ -80,9 +80,10 @@ html {
       -ms-flex-align: center;
           align-items: center;
   color: black;
-  font-size: 50px;
-  gap: 1rem;
+  font-size: 30px;
+  gap: 2rem;
   margin-bottom: 5rem;
+  padding-bottom: 1rem;
   font-weight: 500;
 }
 .special-title span {
@@ -321,7 +322,7 @@ ul {
 .landing .contact-btn .container .social .whatsapp svg {
   background-color: #49e670;
   padding: 15px;
-  font-size: 35px;
+  font-size: 30px;
   border-radius: 50%;
   color: white;
   display: -webkit-box;
@@ -337,7 +338,7 @@ ul {
 }
 @media (max-width: 767px) {
   .landing .contact-btn .container .social .whatsapp svg {
-    font-size: 30px;
+    font-size: 25px;
   }
 }
 @media (max-width: 767px) {
@@ -348,7 +349,7 @@ ul {
 .landing .contact-btn .container .social .messenger svg {
   background-color: #1877f2;
   padding: 12px;
-  font-size: 32px;
+  font-size: 27px;
   border-radius: 50%;
   color: white;
   display: -webkit-box;
@@ -364,7 +365,7 @@ ul {
 }
 @media (max-width: 767px) {
   .landing .contact-btn .container .social .messenger svg {
-    font-size: 30px;
+    font-size: 25px;
   }
 }
 .landing .contact-btn .container .contact-icon {
@@ -381,11 +382,11 @@ ul {
   border-radius: 50%;
   color: white;
   padding: 12px;
-  font-size: 32px;
+  font-size: 27px;
 }
 @media (max-width: 767px) {
   .landing .contact-btn .container .contact-icon svg {
-    font-size: 30px;
+    font-size: 25px;
   }
 }
 .landing .btn-up {
@@ -462,7 +463,7 @@ ul {
           align-items: center;
   border-radius: 50%;
   color: black;
-  font-size: 30px;
+  font-size: 25px;
   max-width: 50px;
   min-width: 50px;
   max-height: 50px;
@@ -489,7 +490,7 @@ ul {
   left: 50%;
   -webkit-transform: translate(1000%, -50%);
           transform: translate(1000%, -50%);
-  font-size: 30px;
+  font-size: 25px;
   cursor: pointer;
   color: white;
 }
@@ -500,7 +501,7 @@ ul {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   padding: 20px;
-  font-size: 25px;
+  font-size: 20p;
   -webkit-transition: 2s;
   transition: 2s;
   color: white;
@@ -514,23 +515,23 @@ ul {
   direction: ltr;
 }
 .landing .main-search .container .search-bar .text::-webkit-input-placeholder {
-  font-size: 25px;
+  font-size: 20p;
   color: white;
 }
 .landing .main-search .container .search-bar .text::-moz-placeholder {
-  font-size: 25px;
+  font-size: 20p;
   color: white;
 }
 .landing .main-search .container .search-bar .text:-ms-input-placeholder {
-  font-size: 25px;
+  font-size: 20p;
   color: white;
 }
 .landing .main-search .container .search-bar .text::-ms-input-placeholder {
-  font-size: 25px;
+  font-size: 20p;
   color: white;
 }
 .landing .main-search .container .search-bar .text::placeholder {
-  font-size: 25px;
+  font-size: 20p;
   color: white;
 }
 .landing .main-search .container .search-bar .text.active {
@@ -595,8 +596,8 @@ ul {
   right: 0%;
 }
 .services .container .carousel-indicators {
-  -webkit-transform: translateY(350%);
-          transform: translateY(350%);
+  -webkit-transform: translateY(240%);
+          transform: translateY(240%);
 }
 .services .container .carousel-indicators .data-bs-target {
   background-color: #00508d !important;
@@ -704,9 +705,20 @@ ul {
 .team .container.active {
   left: 0%;
 }
+.team .container .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
 .team .container .carousel-indicators {
-  -webkit-transform: translateY(350%);
-          transform: translateY(350%);
+  -webkit-transform: translateY(240%);
+          transform: translateY(240%);
 }
 .team .container .carousel-indicators .data-bs-target {
   background-color: #00508d !important;
@@ -845,8 +857,8 @@ ul {
   border-color: #00508d;
 }
 .reviews .container .carousel-indicators {
-  -webkit-transform: translateY(350%);
-          transform: translateY(350%);
+  -webkit-transform: translateY(240%);
+          transform: translateY(240%);
 }
 .reviews .container .carousel-indicators .data-bs-target {
   background-color: #00508d !important;

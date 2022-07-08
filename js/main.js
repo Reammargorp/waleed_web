@@ -50,7 +50,7 @@ phone.onclick =function() {
     open("tel:201558854716")
 }   
 address.onclick =function() {
-    open("https://www.google.com/maps/place/%D8%AA%D9%82%D9%86%D9%8A%D8%A9+%D8%AF%D9%88%D8%AA+%D9%83%D9%88%D9%85%E2%80%AD/@30.038355,31.2044092,17z/data=!3m1!4b1!4m5!3m4!1s0x145847017326238d:0x5dd5dff64a203fca!8m2!3d30.038355!4d31.2022205?hl=ar")
+    open("https://www.google.com/maps/place/%D9%85%D8%B9%D8%A7%D9%85%D9%84+%D8%B6%D8%A7%D9%85%D9%86%E2%80%AD/@29.9682461,30.9388588,17z/data=!3m1!4b1!4m5!3m4!1s0x14585768539eadaf:0xe10b16c4351b0fcd!8m2!3d29.9682461!4d30.9388588?hl=en-US")
 }
 
 
@@ -103,12 +103,12 @@ if(window.scrollY >= team.offsetTop - 300) {
 if(window.scrollY >= teamTwo.offsetTop - 300) {
   teamTwo.classList.add("active");
 }
-if(window.scrollY >= reviews.offsetTop - 300) {
-  reviews.classList.add("active");
-}
-if(window.scrollY >= reviewsTwo.offsetTop - 300) {
-  reviewsTwo.classList.add("active");
-}
+// if(window.scrollY >= reviews.offsetTop - 300) {
+//   reviews.classList.add("active");
+// }
+// if(window.scrollY >= reviewsTwo.offsetTop - 300) {
+//   reviewsTwo.classList.add("active");
+// }
 if(window.scrollY >= online.offsetTop - 300) {
   online.classList.add("active");
 }
@@ -118,10 +118,10 @@ if(window.scrollY >= articles.offsetTop - 300) {
 if(window.scrollY >= articlesTwo.offsetTop - 300) {
   articlesTwo.classList.add("active");
 }
-if(window.scrollY >= info.offsetTop + 4200) {
+if(window.scrollY >= info.offsetTop - 300) {
   info.classList.add("active");
 }
-if(window.scrollY >= footer.offsetTop + 4500) {
+if(window.scrollY >= footer.offsetTop - 300) {
   footer.classList.add("active");
 }
 if(window.scrollY >= 500) {

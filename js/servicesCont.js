@@ -68,7 +68,7 @@ servicesTab[1].onclick = function() {
     resultTitle[i].classList.remove("active")
   }
   resultTitle[1].classList.add("active")
-  secondBox.style.height = "310vh"
+  secondBox.style.height = "150vh"
 
 } 
 servicesTab[2].onclick = function() {

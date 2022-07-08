@@ -34,10 +34,10 @@ if(contactIconI.classList.value === "fas", "fa-comment-dots") {
   console.log(contactIconI)
 }
 }
-var card = document.querySelector(".result .row .card")
-card.onclick = function() {
-open("servicesCont.html" ,"_self")
-}
+// var card = document.querySelector(".result .row .card")
+// card.onclick = function() {
+// open("servicesCont.html" ,"_self")
+// }
 
 
 let mainText = document.querySelector(".main-search .search-bar .mainText");
