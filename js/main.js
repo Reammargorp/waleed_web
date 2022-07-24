@@ -1,12 +1,24 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 let landing = document.querySelector(".landing")
 let landing3 = document.querySelector(".landing .title h2");
 let landing2 = document.querySelector(".landing .title h3");
-let landingMainBtn = document.querySelector(".landing .title .main-btn");
 
 window.onload = function () {
   landing3.classList.add("active");
   landing2.classList.add("active");
-  landingMainBtn.classList.add("active");
 };
 
 
@@ -44,7 +56,7 @@ let mail = document.querySelector(".mail")
 let phone = document.querySelector(".phone")
 let address = document.querySelector(".address")
 mail.onclick =function() {
-    open("mailto:yassienwyh0@gmail.com")
+    open("mailto:Admin@waleedhaikal.com")
 }
 phone.onclick =function() {
     open("tel:201558854716")
@@ -87,7 +99,6 @@ window.onscroll = function(){
   if(window.scrollY >= landing.offsetTop -200) {
     landing3.classList.add("active");
     landing2.classList.add("active");
-    landingMainBtn.classList.add("active");
 }
 if(window.scrollY >= services.offsetTop - 300) {
   services.classList.add("active");
@@ -145,69 +156,105 @@ if(window.scrollY >= skill.offsetTop - 300) {
 
 
 
+let serviceSearch = ["services" , "service" , "خدماتنا" , "الخدمات"]
+let articleSearch = ["articles" , "article" , "مقالاتنا" , "المقالات"]
+let jobsSearch = ["jobs" , "job" , "الوظائف" , "وظائفنا"]
+let aboutSearch = ["about us" , "About Us" , "من نحن" , "عن الحصري كلينك التخصصية" , "عن الحصري كلينك"]
+let indexSearch = ["الرئيسية" , "الصفحة الرئيسية" , "home page"]
+let bookSearch = ["booking" , "حجز موعد" , "الحجز"]
+let drWaleedSearch = ["DrWaleed" , "Dr Waleed" , "dr waleed" , "Dr Waleed Haikal" , "dr waleed haikal" , "الدكتور وليد هيكل" , "دكتور وليد هيكل" , "دكتور وليد" , "الدكتور وليد"]
+
 let mainText = document.querySelector(".main-search .search-bar .mainText");
 let mainSubmit = document.querySelector(".main-search .search-bar .mainSubmit");
-console.log(mainText)
+
 mainSubmit.onclick = function (e) {
-    if (mainText.value == "services" || mainText.value == "service" || mainText.value == "الخدمات" ||   mainText.value == "خدمات") {
-        mainText.value = ""
-       open("services.html" ,"")
-    }
-    if (mainText.value == "مقالاتنا" || mainText.value == "article" || mainText.value == "المقالات" ||   mainText.value == "مقالاتنا") {
-        mainText.value = ""
-        open("articles.html" ,"")
-    }
-    if (mainText.value == "الرئيسيه" || mainText.value == "main" ) {
-        mainText.value = ""
-       open("index.html" ,"")
-    }
-    if (mainText.value == "تواصل معنا" || mainText.value == "contact" || mainText.value == "التواصل" || mainText.value == "اتصل بنا" || mainText.value == "التواصل") {
-        mainText.value == ""
-       open("contact.html" ,"")
-    }
-    if (mainText.value == "job" || mainText.value == "jobs" || mainText.value == "الوظائف" || mainText.value == "وظيفه") {
-      mainText.value == ""
-     open("job.html" ,"")
-  }
-  if (mainText.value == "الكشف الاونلاين" || mainText.value == "كشف" || mainText.value == "الكشف" || mainText.value == "medical") {
-    mainText.value == ""
-   open("medical.html" ,"")
+for(let s = 0; s < serviceSearch.length ; s++) {
+if (mainText.value == serviceSearch[s]) {
+open("../html/services.html" ,"")
 }
-    else {
-        mainText.value == ""
-        open("404.html" ,"")
-    }
-  };
+}
+for(let a = 0; a < articleSearch.length ; a++) {
+if (mainText.value == articleSearch[a]) {
+open("../html/articles.html" ,"")
+}
+}
+for(let j = 0; j < jobsSearch.length ; j++) {
+if (mainText.value == jobsSearch[j]) {
+open("../html/jobs.html" ,"")
+}
+}
+for(let o = 0; o < aboutSearch.length ; o++) {
+if (mainText.value == aboutSearch[o]) {
+open("../html/about.html" ,"")
+}
+}
+for(let i = 0; i < indexSearch.length ; i++) {
+if (mainText.value == indexSearch[i]) {
+open("/index.html" ,"")
+}
+}
+for(let p = 0; p < bookSearch.length ; p++) {
+if (mainText.value == bookSearch[p]) {
+open("../html/book.html" ,"")
+}
+}
+for(let r = 0; r < drWaleedSearch.length ; r++) {
+if (mainText.value == drWaleedSearch[r]) {
+open("../html/doctorWaleedInfo.html" ,"")
+}
+}
+if (mainText.value == "") {
+open("../html/404.html" ,"")
+mainText.value = ""
+}
+
+}
 
 let menuText = document.querySelector(".menu-search .menu-text");
 let menuSubmit = document.querySelector(".menu-search .menu-submit");
+
+console.log(menuText)
+
 menuSubmit.onclick = function (e) {
-    if (menuText.value == "services" || menuText.value == "service" || menuText.value == "الخدمات" ||   menuText.value == "خدمات") {
-        menuText.value = ""
-       open("services.html" ,"")
-    }
-    if (menuText.value == "مقالاتنا" || menuText.value == "article" || menuText.value == "المقالات" ||   menuText.value == "مقالاتنا") {
-        menuText.value = ""
-        open("articles.html" ,"")
-    }
-    if (menuText.value == "الرئيسيه" || menuText.value == "main" ) {
-        menuText.value = ""
-       open("index.html" ,"")
-    }
-    if (menuText.value == "تواصل معنا" || menuText.value == "contact" || menuText.value == "التواصل" || menuText.value == "اتصل بنا" || menuText.value == "التواصل") {
-        menuText.value == ""
-       open("contact.html" ,"")
-    }
-    if (menuText.value == "job" || menuText.value == "jobs" || menuText.value == "الوظائف" || menuText.value == "وظيفه") {
-      menuText.value == ""
-     open("job.html" ,"")
-  }
-  if (menuText.value == "الكشف الاونلاين" || menuText.value == "كشف" || menuText.value == "الكشف" || menuText.value == "medical") {
-    menuText.value == ""
-   open("medical.html" ,"")
+for(let s = 0; s < serviceSearch.length ; s++) {
+if (menuText.value == serviceSearch[s]) {
+open("../html/services.html" ,"")
 }
-    else {
-        menuText.value == ""
-        open("404.html" ,"")
-    }
-  };
+}
+for(let a = 0; a < articleSearch.length ; a++) {
+if (menuText.value == articleSearch[a]) {
+open("../html/articles.html" ,"")
+}
+}
+for(let j = 0; j < jobsSearch.length ; j++) {
+if (menuText.value == jobsSearch[j]) {
+open("../html/jobs.html" ,"")
+}
+}
+for(let o = 0; o < aboutSearch.length ; o++) {
+if (menuText.value == aboutSearch[o]) {
+open("../html/about.html" ,"")
+}
+}
+for(let i = 0; i < indexSearch.length ; i++) {
+if (menuText.value == indexSearch[i]) {
+open("/index.html" ,"")
+}
+}
+for(let p = 0; p < bookSearch.length ;  p++) {
+if (menuText.value == bookSearch[p]) {
+open("../html/book.html" ,"")
+}
+}
+for(let r = 0; r < drWaleedSearch.length ; r++) {
+if (menuText.value == drWaleedSearch[r]) {
+open("../html/doctorWaleedInfo.html" ,"")
+}
+}
+
+
+if (menuText.value == "") {
+open("../html/404.html" ,"")
+}
+
+}

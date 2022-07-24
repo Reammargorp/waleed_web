@@ -87,14 +87,14 @@ html {
   font-weight: 500;
 }
 .special-title span {
-  color: #00508d !important;
+  color: #5bccd0;
 }
 
 .special-span {
   width: 120px;
   height: 2px;
   background-color: #00508d;
-  background-image: -webkit-linear-gradient(left, #00508d, #6bb4b6);
+  background-image: -webkit-linear-gradient(left, #00508d, #5bccd0);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
