@@ -156,20 +156,6 @@ input[type=text]:focus::placeholder {
   background-color: var(--main-color-alt);
 }
 
-::-moz-selection {
-  background-color: transparent;
-  color: gold;
-  background-color: black;
-  border-radius: 2px;
-}
-
-::selection {
-  background-color: transparent;
-  color: gold;
-  background-color: black;
-  border-radius: 2px;
-}
-
 body {
   font-family: Arial, Helvetica, sans-serif;
 }

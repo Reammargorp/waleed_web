@@ -31,7 +31,7 @@ let serviceSearch = ["services" , "service" , "خدماتنا" , "الخدمات
 let articleSearch = ["articles" , "article" , "مقالاتنا" , "المقالات"]
 let jobsSearch = ["jobs" , "job" , "الوظائف" , "وظائفنا"]
 let aboutSearch = ["about us" , "About Us" , "من نحن" , "عن الحصري كلينك التخصصية" , "عن الحصري كلينك"]
-let indexSearch = ["الرئيسية" , "الصفحة الرئيسية" , "home page"]
+let indexSearch = ["الرئيسية" , "الصفحة الرئيسية" , "home page" , "home" , "Home"]
 let bookSearch = ["booking" , "حجز موعد" , "الحجز"]
 let drWaleedSearch = ["DrWaleed" , "Dr Waleed" , "dr waleed" , "Dr Waleed Haikal" , "dr waleed haikal" , "الدكتور وليد هيكل" , "دكتور وليد هيكل" , "دكتور وليد" , "الدكتور وليد"]
 
@@ -61,7 +61,7 @@ open("./about.html" ,"")
 }
 for(let i = 0; i < indexSearch.length ; i++) {
 if (mainText.value == indexSearch[i]) {
-open("/index.html" ,"")
+open("../index.html" ,"")
 }
 }
 for(let p = 0; p < bookSearch.length ; p++) {
@@ -109,7 +109,7 @@ open("./about.html" ,"")
 }
 for(let i = 0; i < indexSearch.length ; i++) {
 if (menuText.value == indexSearch[i]) {
-open("/index.html" ,"")
+open("../index.html" ,"")
 }
 }
 for(let p = 0; p < bookSearch.length ;  p++) {
