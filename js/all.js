@@ -1,3 +1,62 @@
+let textInfo = document.querySelectorAll(".text-info")
+
+let nextBtn   = document.querySelectorAll(".next .call")
+
+let phoneClose = document.querySelector(".phone-close")
+
+let phoneInfo  = document.querySelector(".phone-info")
+
+let callInfo = document.querySelectorAll(".call-info")
+
+
+for(let c =0 ; c < callInfo.length; c++) {
+    callInfo[c].onclick = function() {
+        document.body.style.overflowY = "hidden";
+        phoneInfo.classList.add("active")
+        setTimeout(() => {
+          window.scrollTo(0 , phoneInfo.offsetTop)
+        }, 500);    }
+}
+
+phoneClose.onclick = () => {
+document.body.style.overflowY = "scroll";
+phoneInfo.classList.remove("active");
+
+}
+
+nextBtn[0].onclick = () => {
+textInfo[0].classList.remove("active")
+textInfo[2].classList.remove("active")
+textInfo[3].classList.remove("active")
+textInfo[1].classList.add("active")
+}
+nextBtn[1].onclick = () => {
+textInfo[0].classList.remove("active")
+textInfo[1].classList.remove("active")
+textInfo[3].classList.remove("active")
+textInfo[2].classList.add("active")
+}
+nextBtn[2].onclick = () => {
+textInfo[2].classList.remove("active")
+textInfo[1].classList.remove("active")
+textInfo[3].classList.remove("active")
+textInfo[3].classList.add("active")
+}
+nextBtn[3].onclick = () => {
+textInfo[0].classList.remove("active")
+textInfo[1].classList.remove("active")
+textInfo[2].classList.remove("active")
+textInfo[3].classList.add("active")
+open("tel:01024824716")
+}
+
+
+
+
+
+
+
+
 let closeBtn = document.querySelector(".search-close-btn button")
 
 closeBtn.onclick =function() {

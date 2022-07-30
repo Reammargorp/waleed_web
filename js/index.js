@@ -1,12 +1,51 @@
+let textInfo = document.querySelectorAll(".text-info")
+
+let nextBtn   = document.querySelectorAll(".next .call")
+
+let phoneClose = document.querySelector(".phone-close")
+
+let phoneInfo  = document.querySelector(".phone-info")
+
+let footerCall = document.querySelector(".footer-call")
 
 
+phoneClose.onclick = () => {
+document.body.style.overflowY = "scroll";
+phoneInfo.classList.remove("active")
+}
+footerCall.onclick = () => {
+  document.body.style.overflowY = "hidden";
+  phoneInfo.classList.add("active")
+  setTimeout(() => {
+    window.scrollTo(0 , phoneInfo.offsetTop)
+  }, 500);
+}
 
-
-
-
-
-
-
+nextBtn[0].onclick = () => {
+textInfo[0].classList.remove("active")
+textInfo[2].classList.remove("active")
+textInfo[3].classList.remove("active")
+textInfo[1].classList.add("active")
+}
+nextBtn[1].onclick = () => {
+textInfo[0].classList.remove("active")
+textInfo[1].classList.remove("active")
+textInfo[3].classList.remove("active")
+textInfo[2].classList.add("active")
+}
+nextBtn[2].onclick = () => {
+textInfo[2].classList.remove("active")
+textInfo[1].classList.remove("active")
+textInfo[3].classList.remove("active")
+textInfo[3].classList.add("active")
+}
+nextBtn[3].onclick = () => {
+textInfo[0].classList.remove("active")
+textInfo[1].classList.remove("active")
+textInfo[2].classList.remove("active")
+textInfo[3].classList.add("active")
+open("tel:01024824716")
+}
 
 
 
@@ -15,10 +54,29 @@
 let landing = document.querySelector(".landing")
 let landing3 = document.querySelector(".landing .title h2");
 let landing2 = document.querySelector(".landing .title h3");
+let advertisment  = document.querySelector(".advertisment");
+let adClose = document.querySelector(".ad-close")
+
+adClose.onclick = () => {
+advertisment.classList.remove("active")
+document.body.style.overflowY= "scroll"
+setTimeout(() => {
+  advertisment.style.display = "none";
+}, 500);
+}
+
+let header = document.querySelector(".header")
 
 window.onload = function () {
+  window.scrollTo(0 , header.offsetTop )
   landing3.classList.add("active");
   landing2.classList.add("active");
+  advertisment.style.display = "block";
+  setTimeout(() => {
+    window.scrollTo(0 , header.offsetTop )
+    document.body.style.overflowY= "hidden"
+    advertisment.classList.add("active")
+  }, 500);
 };
 
 
@@ -59,7 +117,11 @@ mail.onclick =function() {
     open("mailto:Admin@waleedhaikal.com")
 }
 phone.onclick =function() {
-    open("tel:201558854716")
+  document.body.style.overflowY = "hidden";
+  phoneInfo.classList.add("active")
+  setTimeout(() => {
+    window.scrollTo(0 , phoneInfo.offsetTop)
+  }, 500);
 }   
 address.onclick =function() {
     open("https://www.google.com/maps/place/%D9%85%D8%B9%D8%A7%D9%85%D9%84+%D8%B6%D8%A7%D9%85%D9%86%E2%80%AD/@29.9682461,30.9388588,17z/data=!3m1!4b1!4m5!3m4!1s0x14585768539eadaf:0xe10b16c4351b0fcd!8m2!3d29.9682461!4d30.9388588?hl=en-US")

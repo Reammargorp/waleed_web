@@ -692,6 +692,119 @@ ul {
 }
 
 /* End Landing */
+/* Start phone-info */
+.phone-info {
+  position: relative;
+  display: none;
+  opacity: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.phone-info.active {
+  display: block;
+  opacity: 1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin-top: -9%;
+  background-color: rgba(0, 0, 0, 0.4);
+  -webkit-backdrop-filter: saturate(180%) blur(3px) !important;
+          backdrop-filter: saturate(180%) blur(3px) !important;
+  z-index: 10000;
+  overflow: hidden;
+}
+.phone-info .container .phone-card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: white;
+  padding: 2rem 3rem;
+  border-radius: 20px;
+}
+@media (max-width: 767px) {
+  .phone-info .container .phone-card {
+    width: 90%;
+  }
+}
+.phone-info .container .phone-card .top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.phone-info .container .phone-card .top p {
+  font-size: 25px;
+  text-transform: capitalize;
+}
+.phone-info .container .phone-card .top .phone-close {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font-size: 20p;
+  padding: 10px 15px;
+  background-color: red;
+  border-radius: 50%;
+  color: #fff;
+  text-align: center;
+}
+.phone-info .container .phone-card .ad-img {
+  cursor: pointer;
+}
+.phone-info .container .phone-card .ad-img img {
+  max-width: 100%;
+  width: 100%;
+}
+.phone-info .container .text-info {
+  direction: rtl;
+  height: 200px;
+  overflow: scroll;
+  display: none;
+}
+.phone-info .container .text-info.active {
+  display: block;
+}
+.phone-info .container .text-info ul.title {
+  list-style: circle !important;
+}
+.phone-info .container .text-info ul.title li {
+  font-size: 20px;
+  color: black;
+  padding-bottom: 5rem;
+}
+.phone-info .container .text-info .next {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.phone-info .container .text-info .next .call {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 25px;
+  background-color: red;
+  color: white;
+  border-radius: 15px;
+  padding: 1rem 1.5rem;
+}
+
+/* End phone-info */
 /*Start Call Us*/
 .call .container .call-box {
   display: -webkit-box;
@@ -756,7 +869,8 @@ ul {
     margin-top: 0%;
   }
 }
-.call .container .call-box a {
+.call .container .call-box .call-info {
+  cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -776,7 +890,7 @@ ul {
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
-.call .container .call-box a:hover {
+.call .container .call-box .call-info:hover {
   background-color: #5bccd0;
 }
 
@@ -788,6 +902,7 @@ ul {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+  padding-bottom: 5rem;
 }
 .communication .container form {
   background-color: #00508d;
